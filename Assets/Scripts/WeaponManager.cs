@@ -33,7 +33,7 @@ public class WeaponManager : MonoBehaviour
             Shoot();
         }
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKeyDown(KeyCode.R) && manager.currentWeapon.remainingAmmo != 0)
         {
             Reload();
         }
