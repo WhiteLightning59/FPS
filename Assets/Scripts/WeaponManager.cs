@@ -88,7 +88,7 @@ public class WeaponManager : MonoBehaviour
             int reloadAmount = Mathf.Min(manager.currentWeapon.magazineSize - manager.currentWeapon.currentAmmo, manager.currentWeapon.remainingAmmo);
 
             manager.currentWeapon.currentAmmo += reloadAmount;
-            manager.currentWeapon.remainingAmmo -= reloadAmount;
+            //manager.currentWeapon.remainingAmmo -= reloadAmount;
         }
     }
 }
