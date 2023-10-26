@@ -72,6 +72,8 @@ public class WeaponManager : MonoBehaviour
 
     private void Reload()
     {
+        weaponAnim = manager.currentWeaponObject.GetComponent<Animator>();
+
         if (manager.currentWeapon.currentAmmo != manager.currentWeapon.magazineSize)
         {
             if (manager.currentWeapon.currentAmmo != 0)
